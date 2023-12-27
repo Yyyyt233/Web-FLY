@@ -1,0 +1,92 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>massage</title>
+<link rel="stylesheet" type="text/css" href="css/massage.css">
+<link rel="stylesheet" type="text/css" href="css/total.css">	
+</head>
+<body>
+	<header id="heda">
+	<div class="con">
+		<ul class="left">
+	    <li><a href="index.html" target="_blank">首页</a></li>
+        <li><a href="author.html" target="_blank">作者介绍</a></li>
+		<li><a href="character.html" target="_blank">人物介绍</a></li>
+		<li><a href="plot.html" target="_blank">经典剧情</a></li>
+		<li><a href="pic.html" target="_blank">精彩图片</a></li>
+		<li><a href="massage.html" target="_blank">留言</a></li>	
+		</ul>
+		<ul class="right">
+		  <li><a href="登录.html" target="_blank">登录/注册</a></li>
+		</ul></div>
+		<img src="img/focus.jpg"  alt="焦点图" height="500">
+	</header>
+	<div class="centerA">
+	<h1>留言板</h1>
+		<div class="A">
+		<img src="img/tx1.jpg" alt="#" height="150">
+			<h3>Eliauk</h3>
+			<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;我们都有过梦想，但长大后实现的人寥寥可数！看过这部动画片的人，或许你和我一样想到自己曾经的梦想，有没有努力，自己知道，看着身边一个个边看边哭的样子，我想这部片成功的地方在于孩子们的热情与梦想都是无限可能的，虽然我们随着年纪增长而缩小了范围，但那依旧是我们曾经的梦想。</p>
+		</div>
+		<div class="B">
+			<img src="img/tx2.jpg" alt="#" height="150">
+			<h3>后天的雨 </h3>
+			<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;在影片最开头对老夫妻一生的回顾无疑是最大泪点，他们过了很好很幸福的一生，当垂垂老矣，他们仍深爱着对方，就算你已不在，也要带着他们曾经共同的梦想在生命的最终冒险一把，就像小朋友不畏惧一切的好奇心，对生活对梦想，再大的年纪都不是阻碍。</p>
+		</div>
+		<div class="C">
+			<h3>大奇特(Grinch)</h3>
+			<img src="img/tx3.jpg" alt="#" height="150">
+			<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;皮克斯今年的动画依然感动地我一塌糊涂，中间的冒险是给孩子看的，我只喜欢前15分钟的无声胜有声，以及片尾曲里卡尔填补了冒险书里的新冒险，当然还有卡尔向艾丽承诺的这场圆梦之旅的执著精神和他的爱~</p>
+		</div>
+		<div class="D">
+			<h3>biang</h3>
+			<img src="img/tx4.jpg" alt="#" height="150">
+			<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;温馨的伊始，从两小无猜到白头偕老，以让《飞屋环游记》蒙上令人神往的基色，为了一生承诺那荒诞忍俊不禁的“飞屋”传奇，并非仅是卡尔践行妻子的遗愿，更令自已走出了用回忆禁锢自我的心灵牢笼，生活永远不该失去的是爱与希望。</p>
+		</div>
+		<div class="E">
+			<img src="img/tx5.jpg" alt="#" height="150">
+			<h3>我</h3>
+		</div>
+	</div>
+	<div class="top">
+		<textarea class="top1"></textarea>
+    <button class="top2">发布</button>
+    <ul class="top3"></ul>
+	</div>
+    <script>
+        var txt = document.querySelector(".top1");
+        var btn = document.querySelector(".top2");
+        var ul = document.querySelector(".top3");
+        //2、给button绑定点击事件
+        btn.onclick = function () {
+            if (txt.value == "") {//当文本框中没有文字时，提示
+                alert("您没有输入内容")
+            } else {
+                //创建元素li作为留言区
+                var li = document.createElement("li");
+                //将文本框中的内容放到li中,a标签中href中的内容代表什么都不执行
+                li.innerHTML = txt.value + "<a href='javascript:;'>删除</a>"
+                txt.value = "";//添加之后文本框的内容清空
+                //将留言添加到ul中，而且在最上方
+                ul.insertBefore(li, ul.children[0]);
+                //当点击删除时删除ul中的li
+                var as = document.querySelectorAll("a");
+                //循环给每个删除绑定事件
+                for (var i = 0; i < as.length; i++) {
+                    as[i].onclick = function () {
+                        //删除当前a标签所在位置的父节点li
+                        ul.removeChild(this.parentNode);
+                    }
+                }
+            }
+        }
+		 </script>
+	<footer>
+	<div class="foot">
+	<p>mcopyright©2023飞屋环游记 feiwuhuanyouji.com版权所有</p>
+	<p>联系我们：1234567890@163.com</p>
+	</div>
+</footer>
+</body>
+</html>

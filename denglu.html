@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>登录</title>
+	<link rel="stylesheet" type="text/css" href="css/denglu.css">
+</head>
+<body>
+ <div id="box">
+        <div class="top" >
+			<h1>登录</h1>
+	 <p>账号</p>
+	 <p>密码</p>
+	 </div>
+	 <input type="text" name="username" id="username">
+	 <input type="password" name="" id="password">
+	<button class="top1">登录</button>
+	<img src="img/denglu.jpg" alt="#" height="400">
+	   </div>
+	  <script>
+        var input = document.querySelector('#password');
+        var flag = false;
+        img.onclick = function(){
+            flag = !flag;
+            if(flag){
+            this.className = 'hover';
+            input.type = 'text';
+        }else{
+            this.className = '';
+            input.type = 'password';
+        }
+    }
+    </script>
+</body>
+</html>

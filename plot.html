@@ -1,0 +1,107 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>plot</title>
+	<link rel="stylesheet" type="text/css" href="css/total.css">
+	<link rel="stylesheet" type="text/css" href="css/plot.css">
+	
+</head>
+<body>
+	<header id="heda">
+	<div class="con">
+		<ul class="left">
+	    <li><a href="index.html" target="_blank">首页</a></li>
+        <li><a href="author.html" target="_blank">作者介绍</a></li>
+		<li><a href="character.html" target="_blank">人物介绍</a></li>
+		<li><a href="plot.html" target="_blank">经典剧情</a></li>
+		<li><a href="pic.html" target="_blank">精彩图片</a></li>
+		<li><a href="massage.html" target="_blank">留言</a></li>
+		</ul>
+		<ul class="right">
+		  <li><a href="登录.html" target="_blank">登录/注册</a></li>
+		</ul></div>
+		<img src="img/focus.jpg" alt="焦点图" height="500">
+	</header>
+  <div class="cardBox">
+    <ul class="imgBox">
+      <li class="item"></li>
+      <li class="item ani">
+        <img src="img/l1.jpg" alt="">
+      </li>
+      <li class="item">
+
+        <img src="img/l2.jpg" alt=""
+          srcset="">
+      </li>
+      <li class="item">
+
+        <img src="img/l3.jpg" alt=""
+          srcset="">
+      </li>
+      <li class="item">
+
+        <img src="img/l4.jpg" alt=""
+          srcset="">
+      </li>
+      <li class="item">
+
+        <img src="img/l5.jpg" alt=""
+          srcset="">
+      </li>
+    </ul>
+  </div>
+  <script>
+    let items = document.querySelectorAll(".item")
+    let imgBox = document.querySelector(".imgBox")
+    let index = 1
+    let timer = null
+    const initInterval = () => {
+      timer = setInterval(() => {
+        items.forEach((item, index) => {
+          let translateX = index * 500
+          item.style.zIndex = `-1`
+          item.classList.remove('ani')
+        })
+        items[index].classList.add('ani')
+        let pre = index - 1
+        items[pre].style.zIndex = '2'
+        index++
+        if (index >= 6) {
+          index = 1
+        }
+      }, 4000);
+    }
+
+    initInterval()
+    imgBox.addEventListener("mouseover", () => {
+      clearInterval(timer)
+    })
+
+    imgBox.addEventListener("mouseout", () => {
+      initInterval()
+    })
+  </script>
+	<div class="top">
+		<audio src="audio/background-music.mp3" controls="controls"></audio>
+	<h1><font color="#0F85C7">故事情节介绍</font></h1>
+		<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;故事的开端是卡尔·菲雷克斯送别了妻子艾莉，并且失去了与艾莉一同度过的整整六十几年的快乐时光。然而，这位老人不愿意停下自己的脚步，他决定实现夫妻两人的心愿，前往南美洲的巴拉圭探险。卡尔·菲雷克斯计划将自己的房子系上气球，然后漂浮在空中，用这种方式来完成他与妻子的梦想。在离开故居的时候，卡尔·菲雷克斯却意外地遇到了一个十岁的小男孩罗素，罗素是少年童子军的一员，向卡尔·菲雷克斯申请成为义工，在帮助卡尔·菲雷克斯打点行装的时候，他发现卡尔·菲雷克斯的房子飘浮在了空中上空，卡尔·菲雷克斯也顺带着罗素一同展开这场奇幻冒险之旅。<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+在飞屋上的日子里，卡尔·菲雷克斯一直在忙碌着，他维修飞屋、寻找食物，还要随时注意危险。然而，年迈的卡尔·菲雷克斯也很快适应了这种新的生活。与此同时，罗素也逐渐变得与众不同，原本单纯的他开始了解到世界的复杂和残酷。在这段旅途中，他结交了一些好友，帮助他们完成他们的心愿。</p>
+	</div>
+	<div class="mid">
+		<img src="img/plot.jpg"  alt="#" height="250">
+		<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;罗素和卡尔·菲雷克斯还邂逅了一只饿了很久的仪式鸟凯文，他们合作保护了凯文并且掩护它躲避捕猎者。在他们的巨大努力下，凯文的母亲也和它们相见了。此外，他们还遇到了一个自称为H.I.M.（史上最伟大的音乐家）的东西，是一台疯狂到会自己自毁的音响设备，他们帮助H.I.M.实现了他的梦想，获得了他的友情。<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+最大的难题是，卡尔·菲雷克斯的女儿莫莉的前男友，一个名叫查尔斯·福赛特的猎人和他的狗迪吉正追踪着卡尔·菲雷克斯，福赛特想把凯文卖到动物园来赚钱。福赛特在飞屋上发动进攻的时候，卡尔·菲雷克斯不仅派遣了凯文，还才智激发，使用房屋的一切武器帮助 Martin 和罗素逃脱。不过，在这个过程中，飞屋也
+受到了破坏，而卡尔也因此落入了福赛特的手中。幸好，罗素开始学会独立思考，并且在关键时刻站了出来，与H.I.M.一同救下了卡尔。这段冒险的高潮点是，卡尔和罗素以及几个新朋友一起搭乘起一队彩色气球，并飘向姆尼古岛。这里是艾莉和卡尔在童年时期梦想着要去的地方。<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+在到达巴拉圭的最后一站，也是面临转折点的姆尼古岛上，卡尔发现他们的冒险并没有真正结束。在这里，他的飞屋被困在一个巨大的树屋附近，这导致了他与罗素要与他们的新朋友一同冒险拯救飞屋。在这里也到达了故事的高潮，随着众人的努力和协助，他们最终成功地将飞屋拯救下来，并带着艾莉的骨灰完成了他们的任务。<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+在故事的结尾，卡尔·菲雷克斯意识到虽然他的妻子不再身边，但他并没有失去他们的爱和回忆，这种感觉是无价的。他将他的飞屋置于峭壁的顶端，给罗素留下了一个物理标志，以保留这段旅程的回忆和意义。最后，卡尔和罗素成为了最好的朋友，并继续迎接新的冒险。<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+电影的魅力在于它深入情感，吸引观众关注人性的重要因素。它揭示了为了追逐梦想需要不屈不挠地坚持不懈，并且表达了我们在一生中的目标和遗憾。卡尔是一个令人敬仰的角色，他通过自己的行动展示了坚毅不屈的品质，并且肯定了舒适地了解和感悟人生的实际是无法与追逐新的体验和冒险相比较的。同样，罗素也为他未来的成长和发展设定了一个重要的阶段，他体验了真正的危险，学会了成年人必须面对的责任和挑战。</p>
+	</div>
+	<footer>
+	<div class="foot">
+	<p>mcopyright©2023飞屋环游记 feiwuhuanyouji.com版权所有</p>
+	<p>联系我们：1234567890@163.com</p>
+	</div>
+</footer>
+</body>
+</html>
