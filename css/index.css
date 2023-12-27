@@ -1,0 +1,277 @@
+@charset "utf-8";
+/* CSS Document */
+.top{
+	position: absolute;
+	top:600px;
+	left:150px;
+	width:1200px;
+	height:250px;
+}
+.top img{
+	margin-left:900px;
+	margin-top:20px;
+	width:300px;
+}
+.centerA{
+	position: absolute;
+	top:880px;
+	left:150px;
+	width:850px;
+	height:400px;
+	border:2px solid #539BF4;
+}
+.centerA .A{
+	background:#539BF4;
+	position: absolute;
+	width:850px;
+	height:35px;
+}
+.centerA .A p{
+	margin-top:5px;
+	margin-left:30px;
+}
+.centerA p{
+	margin-top:45px;
+	text-align:left;
+	margin-left:15px;
+	margin-right:15px;
+	
+}
+.centerA .B{
+	width:400px;
+	height:370px;
+	position: absolute;
+	top:40px;
+	left:20px;
+}
+.centerA .B p{margin-left: 20px;
+	margin-top: 30px;
+	
+}
+.centerA .C{
+	width:400px;
+	height:350px;
+	position: absolute;
+	top:40px;
+	left:420px;
+
+}
+.centerA .C p{margin-left:50px;
+	margin-top: 30px;
+	
+}
+.centerB{
+	position: absolute;
+	top:880px;
+	left:1060px;
+	width:290px;
+	height:400px
+}
+.centerC{
+	position: absolute;
+	top:1360px;
+	left:150px;
+	width:580px;
+	height:150px;
+	border:2px solid #539BF4;
+}
+.centerC p{
+	margin:45px 10px;
+	text-align:left;
+}
+.centerC a{
+position: absolute;
+	top:120px;
+	left:505px;
+}
+.centerC .C{
+	background:#539BF4;
+	position: absolute;
+	width:580px;
+	height:35px;
+}
+.centerC .C p{
+	margin-top:5px;
+	text-align:left;
+	margin-left:15px;
+	margin-right:15px;
+	
+}
+.centerD{
+	position: absolute;
+	top:1360px;
+	left:770px;
+	width:580px;
+	height:150px;
+	border:2px solid #539BF4;
+}
+.centerD p{
+	margin:45px 10px;
+	text-align:left;
+}
+.centerD a{
+position: absolute;
+	top:120px;
+	left:505px;
+}
+.centerD .D{
+	background:#539BF4;
+	position: absolute;
+	width:580px;
+	height:35px;
+}
+.centerD .D p{
+	margin-top:5px;
+	text-align:left;
+	margin-left:15px;
+	margin-right:15px;
+	
+}
+.centerE p{
+	margin:45px 10px;
+	text-align:left;
+}
+.centerE a{
+position: absolute;
+	top:120px;
+	left:505px;
+}
+.centerE .E{
+	background:#539BF4;
+	position: absolute;
+	width:580px;
+	height:35px;
+}
+.centerE .E p{
+	margin-top:5px;
+	text-align:left;
+	margin-left:15px;
+	margin-right:15px;
+	
+}
+.centerF .F{
+	background:#539BF4;
+	position: absolute;
+	width:580px;
+	height:35px;
+}
+.centerF .F p{
+	margin-top:5px;
+	text-align:left;
+	margin-left:15px;
+	margin-right:15px;
+	
+}
+.centerE{
+	position: absolute;
+	top:1540px;
+	left:150px;
+	width:580px;
+	height:150px;
+	border:2px solid #539BF4;
+}
+.centerF{
+	position: absolute;
+	top:1540px;
+	left:770px;
+	width:580px;
+	height:150px;
+	border:2px solid #539BF4;
+}
+.centerF p{
+	margin:45px 10px;
+	text-align:left;
+}
+.centerF a{
+position: absolute;
+	top:120px;
+	left:505px;
+}
+.centerG{
+	position: absolute;
+	width:1200px;
+	height:310px;
+	left:150px;
+	top:1770px;
+	border:2px solid #539BF4;
+}
+.centerG .G{
+	background:#539BF4;
+	position: absolute;
+	width:1200px;
+	height:35px;
+}
+.centerG .G p{
+	margin-top:5px;
+	text-align:left;
+	margin-left:15px;
+	margin-right:15px;
+	
+}
+.centerG  p{
+	text-align:left;
+	margin-left:60px;
+	margin-bottom:40px;
+	margin-top:50px;
+}
+.bottom{
+	position: absolute;
+	top:2170px;
+	left:150px;
+	width:1200px;
+	height:250px;
+	border:2px solid #539BF4;
+}
+.bottom .M{
+	background:#539BF4;
+	position: absolute;
+	width:1200px;
+	height:35px;
+}
+.bottom .M p{
+	margin-top:5px;
+	margin-left:15px;
+}
+.bottom img:hover{
+       transform: scale(1.5);
+	 z-index: 1;
+    }
+.bottom img{
+	 transition: transform .2s;
+	width:270px;
+}
+.bottom .img-cs1{
+	margin-left:25px;
+	margin-top: 69px;
+}
+.bottom .img-cs2{
+	margin-left:320px;
+	margin-top: 69px;
+}
+.bottom .img-cs3{
+	margin-left:615px;
+	margin-top: 69px;
+}
+.bottom .img-cs4{
+	margin-left:910px;
+	margin-top: 69px;
+}
+.bottom a{
+position: absolute;
+	top:225px;
+	left:1120px;
+}
+	footer{
+	width: 100%;
+	height:127px;
+	margin-top:2570px;
+	background:#539BF4;
+}
+.foot p{
+	color:#fff;
+	text-align: center;
+	margin:auto;
+}
+.foot{
+	padding-top:50px;
+}
